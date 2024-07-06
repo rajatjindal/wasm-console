@@ -1,0 +1,1 @@
+tinygo build -x -target=wasip2 --wit-package $(go list -mod=readonly -m -f '{{.Dir}}' github.com/rajatjindal/wasmshell)/wit --wit-world cli -o main.wasm -x -work main.go

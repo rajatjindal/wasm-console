@@ -1,0 +1,9 @@
+package rajatjindal:actions@0.1.0;
+
+world cli {
+  include wasi:cli/imports@0.2.0;
+  include wasi:filesystem/imports@0.2.0;
+  import wasi:http/outgoing-handler@0.2.0;
+
+  export wasi:cli/run@0.2.0;
+}
