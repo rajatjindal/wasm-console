@@ -1,5 +1,6 @@
 Experimental wasmshell, because why not?
 
+## Building
 ```
 $ ls
 README.md build.sh  go.mod    go.sum    internal  main.go   pkg       testme    wit
@@ -10,8 +11,11 @@ $ ./build.sh
 ## ls, notice main.wasm file is created
 $ ls
 README.md build.sh  go.mod    go.sum    internal  main.go   main.wasm pkg       testme    wit
+```
 
-## Run using wasmtime
+
+## Running
+```
 $ wasmtime run --dir testme main.wasm
 starting wasmshell. Enter 'exit' to quit the shell.
 wasmshell> ls testme
