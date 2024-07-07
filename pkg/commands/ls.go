@@ -6,11 +6,11 @@ import (
 )
 
 func Ls(args []string) error {
-	dir := ""
-	if len(args) > 0 {
-		dir = args[0]
+	if len(args) == 0 {
+		return fmt.Errorf("cannot list under / dir. pls provide the dir name mounted using wasmtime")
 	}
 
+	dir := args[0]
 	//TODO: check if dir or file
 	entries, err := os.ReadDir(dir)
 	if err != nil {

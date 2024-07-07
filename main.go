@@ -15,6 +15,10 @@ func main() {
 		fmt.Print("wasmshell> ")
 		result := stdin.GetStdin().BlockingRead(1024)
 		if result.IsErr() {
+			if result.Err().Closed() {
+				fmt.Println("\ngoodbye !")
+				return
+			}
 			panic("wasmshell error")
 		}
 
@@ -54,6 +58,8 @@ func main() {
 			}
 		case "exit":
 			return
+		case "":
+			continue
 		default:
 			fmt.Printf("command %q not supported\n", cmd)
 		}
