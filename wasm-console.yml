@@ -18,12 +18,12 @@ config:
   # Explicitly set the number of columns
   # or use `auto` to take the current
   # number of columns of your shell
-  cols: 383
+  cols: 169
   
   # Explicitly set the number of rows
   # or use `auto` to take the current
   # number of rows of your shell
-  rows: 77
+  rows: 24
   
   # Amount of times to repeat GIF
   # If value is -1, play once
@@ -111,299 +111,261 @@ config:
   
 # Records, feel free to edit them
 records:
-  - delay: 394
+  - delay: 389
     content: "\e[1G\e[0K"
-  - delay: 7
+  - delay: 10
     content: "\r\nThe default interactive shell is now zsh.\r\nTo update your account to use zsh, please run `chsh -s /bin/zsh`.\r\nFor more details, please visit https://support.apple.com/kb/HT208050.\r\n\e[?1034hRajats-MacBook-Pro:wasm-console rajatjindal$ "
-  - delay: 7256
-    content: /usr/local/bin/wasmtime run --dir testme --dir pkg
-  - delay: 6
-    content: ' -Shttp main.wasm'
-  - delay: 408
-    content: "\r\n"
-  - delay: 230
-    content: "starting wasm-console. Enter 'exit' to quit the shell.\r\nwasm-console > "
-  - delay: 1742
-    content: l
-  - delay: 145
-    content: s
-  - delay: 354
-    content: "\r\ntestme\r\npkg\r\nwasm-console > "
-  - delay: 881
-    content: c
-  - delay: 75
-    content: d
-  - delay: 130
-    content: ' '
-  - delay: 251
-    content: t
+  - delay: 4086
+    content: "\r\e[23P(reverse-i-search)`':\e[C"
+  - delay: 328
+    content: "\b\b\bw': /usr/local/bin/wasmtime run --dir testme --dir pkg -Shttp main.wasm\b\b\b\b"
+  - delay: 86
+    content: "\r\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[1@a\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C"
+  - delay: 92
+    content: "\r\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[1@s\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C"
+  - delay: 157
+    content: "\r\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[1@m\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C"
+  - delay: 1084
+    content: "\r\e[19@Rajats-MacBook-Pro:wasm-console rajatjindal$\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\r\n"
   - delay: 45
-    content: e
-  - delay: 169
-    content: s
-  - delay: 104
-    content: t
-  - delay: 169
-    content: m
-  - delay: 81
-    content: e
-  - delay: 125
-    content: "\r\nwasm-console testme> "
-  - delay: 278
-    content: s
-  - delay: 547
-    content: "\b \b"
-  - delay: 197
+    content: "starting wasm-console. Enter 'exit' to quit the shell.\r\nwasm-console > "
+  - delay: 1761
     content: l
-  - delay: 98
+  - delay: 146
     content: s
-  - delay: 140
-    content: "\r\n"
-  - delay: 5
-    content: "some-dir\r\nsome-file\r\nwasm-console testme> "
-  - delay: 965
+  - delay: 222
+    content: "\r\ntestme\r\npkg\r\nwasm-console > "
+  - delay: 696
     content: c
-  - delay: 70
+  - delay: 104
     content: d
-  - delay: 62
+  - delay: 95
     content: ' '
-  - delay: 163
+  - delay: 224
+    content: t
+  - delay: 87
+    content: e
+  - delay: 193
+    content: s
+  - delay: 75
+    content: t
+  - delay: 349
+    content: m
+  - delay: 137
+    content: e
+  - delay: 319
+    content: "\r\nwasm-console testme> "
+  - delay: 1173
+    content: p
+  - delay: 127
+    content: w
+  - delay: 250
+    content: d
+  - delay: 545
+    content: "\r\n/testme\r\nwasm-console testme> "
+  - delay: 2235
+    content: l
+  - delay: 117
+    content: s
+  - delay: 151
+    content: "\r\nsome-dir\r\nsome-file\r\nwasm-console testme> "
+  - delay: 474
+    content: c
+  - delay: 207
+    content: d
+  - delay: 107
+    content: ' '
+  - delay: 104
+    content: s
+  - delay: 101
+    content: o
+  - delay: 164
+    content: m
+  - delay: 96
+    content: e
+  - delay: 244
+    content: d
+  - delay: 175
+    content: i
+  - delay: 249
+    content: "\b \b"
+  - delay: 155
+    content: "\b \b"
+  - delay: 201
+    content: '-'
+  - delay: 322
+    content: d
+  - delay: 134
+    content: o
+  - delay: 321
+    content: "\b \b"
+  - delay: 179
+    content: i
+  - delay: 122
+    content: r
+  - delay: 195
+    content: "\r\nwasm-console testme/some-dir> "
+  - delay: 557
+    content: p
+  - delay: 146
+    content: w
+  - delay: 158
+    content: d
+  - delay: 254
+    content: "\r\n/testme/some-dir\r\nwasm-console testme/some-dir> "
+  - delay: 1223
+    content: l
+  - delay: 122
+    content: s
+  - delay: 142
+    content: "\r\nsome-other-file\r\nwasm-console testme/some-dir> "
+  - delay: 1005
+    content: c
+  - delay: 275
+    content: a
+  - delay: 369
+    content: t
+  - delay: 188
+    content: ' '
+  - delay: 195
     content: s
   - delay: 84
     content: o
-  - delay: 116
+  - delay: 168
     content: m
-  - delay: 80
-    content: e
-  - delay: 145
-    content: '-'
-  - delay: 129
-    content: d
-  - delay: 75
-    content: i
-  - delay: 142
-    content: r
-  - delay: 176
-    content: "\r\nwasm-console testme/some-dir> "
-  - delay: 457
-    content: l
-  - delay: 87
-    content: s
-  - delay: 120
-    content: "\r\nsome-other-file\r\nwasm-console testme/some-dir> "
-  - delay: 1392
-    content: c
-  - delay: 165
-    content: a
-  - delay: 161
-    content: t
-  - delay: 136
-    content: ' '
-  - delay: 32
-    content: s
-  - delay: 135
-    content: o
-  - delay: 115
-    content: m
-  - delay: 80
-    content: e
-  - delay: 176
-    content: '-'
-  - delay: 570
-    content: o
-  - delay: 126
-    content: t
-  - delay: 136
-    content: h
-  - delay: 14
-    content: e
-  - delay: 282
-    content: r
-  - delay: 392
-    content: f
-  - delay: 16
-    content: '-'
-  - delay: 345
-    content: "\b \b"
-  - delay: 223
-    content: "\b \b"
-  - delay: 134
-    content: '-'
-  - delay: 158
-    content: f
-  - delay: 129
-    content: i
-  - delay: 74
-    content: l
-  - delay: 144
-    content: e
-  - delay: 120
-    content: "\r\ncontents of some-other-file\r\nwasm-console testme/some-dir> "
-  - delay: 1007
-    content: c
-  - delay: 115
-    content: d
-  - delay: 210
-    content: ' '
-  - delay: 158
-    content: .
-  - delay: 380
-    content: /
-  - delay: 480
-    content: "\b \b"
-  - delay: 222
-    content: .
-  - delay: 468
-    content: "\r\nwasm-console testme> "
-  - delay: 972
-    content: h
-  - delay: 165
-    content: i
-  - delay: 131
-    content: s
-  - delay: 137
-    content: t
-  - delay: 116
-    content: o
-  - delay: 118
-    content: r
-  - delay: 99
-    content: 'y'
-  - delay: 216
-    content: "\r\n1* ls\r\n2* cd testme\r\n3* ls\r\n4* cd some-dir\r\n5* ls\r\n6* cat some-other-file\r\n7* cd ..\r\n8* history\r\nwasm-console testme> "
-  - delay: 684
-    content: c
-  - delay: 91
-    content: d
-  - delay: 150
-    content: ' '
-  - delay: 216
-    content: .
-  - delay: 122
-    content: .
-  - delay: 1057
-    content: "\r\nwasm-console > "
-  - delay: 1347
-    content: c
-  - delay: 73
-    content: d
-  - delay: 501
-    content: "\b \b"
-  - delay: 150
-    content: "\b \b"
-  - delay: 190
-    content: l
-  - delay: 126
-    content: s
-  - delay: 108
-    content: "\r\ntestme\r\npkg\r\nwasm-console > "
-  - delay: 237
-    content: c
-  - delay: 60
-    content: d
-  - delay: 102
-    content: ' '
-  - delay: 92
-    content: p
-  - delay: 164
-    content: k
-  - delay: 113
-    content: g
-  - delay: 167
-    content: "\r\nwasm-console pkg> "
-  - delay: 129
-    content: l
-  - delay: 136
-    content: s
-  - delay: 112
-    content: "\r\ncommands\r\nhttp-client\r\nwasm-console pkg> "
-  - delay: 1938
-    content: c
-  - delay: 59
-    content: d
-  - delay: 123
-    content: ' '
-  - delay: 143
-    content: .
-  - delay: 144
-    content: .
-  - delay: 202
-    content: "\r\nwasm-console > "
-  - delay: 711
-    content: c
-  - delay: 137
-    content: u
   - delay: 88
-    content: r
-  - delay: 109
-    content: l
-  - delay: 98
-    content: ' '
-  - delay: 102
+    content: e
+  - delay: 503
+    content: '-'
+  - delay: 226
+    content: t
+  - delay: 292
+    content: "\b \b"
+  - delay: 191
+    content: o
+  - delay: 166
+    content: t
+  - delay: 184
     content: h
-  - delay: 98
+  - delay: 130
+    content: e
+  - delay: 125
+    content: r
+  - delay: 139
+    content: '-'
+  - delay: 127
+    content: f
+  - delay: 156
+    content: i
+  - delay: 55
+    content: l
+  - delay: 133
+    content: e
+  - delay: 174
+    content: "\r\ncontents of some-other-file\r\nwasm-console testme/some-dir> "
+  - delay: 1128
+    content: c
+  - delay: 189
+    content: d
+  - delay: 63
+    content: ' '
+  - delay: 243
+    content: .
+  - delay: 123
+    content: .
+  - delay: 186
+    content: /
+  - delay: 204
+    content: .
+  - delay: 150
+    content: .
+  - delay: 264
+    content: "\r\nwasm-console > "
+  - delay: 2673
+    content: c
+  - delay: 115
+    content: u
+  - delay: 310
     content: t
-  - delay: 171
+  - delay: 367
+    content: "\b \b"
+  - delay: 97
+    content: r
+  - delay: 154
+    content: l
+  - delay: 122
+    content: ' '
+  - delay: 166
     content: t
-  - delay: 62
+  - delay: 46
+    content: h
+  - delay: 144
+    content: t
+  - delay: 304
+    content: "\b \b"
+  - delay: 150
+    content: "\b \b"
+  - delay: 124
+    content: "\b \b"
+  - delay: 183
+    content: h
+  - delay: 91
+    content: t
+  - delay: 152
+    content: t
+  - delay: 76
     content: p
-  - delay: 162
+  - delay: 276
     content: s
-  - delay: 250
+  - delay: 369
     content: ':'
-  - delay: 203
+  - delay: 219
     content: /
   - delay: 114
     content: /
-  - delay: 378
+  - delay: 287
     content: g
-  - delay: 89
-    content: o
-  - delay: 126
-    content: o
-  - delay: 105
-    content: g
-  - delay: 129
-    content: l
-  - delay: 86
-    content: e
-  - delay: 104
-    content: .
-  - delay: 97
-    content: c
-  - delay: 223
-    content: o
   - delay: 96
+    content: o
+  - delay: 151
+    content: o
+  - delay: 132
+    content: g
+  - delay: 135
+    content: l
+  - delay: 113
+    content: e
+  - delay: 113
+    content: .
+  - delay: 111
+    content: c
+  - delay: 197
+    content: o
+  - delay: 114
     content: m
-  - delay: 209
+  - delay: 210
     content: "\r\n"
-  - delay: 692
+  - delay: 655
     content: "HTTP/0.0 301 Moved Permanently\r\r\n\r\r\n<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\r\n<TITLE>301 Moved</TITLE></HEAD><BODY>\r\n<H1>301 Moved</H1>\r\nThe document has moved\r\n<A HREF=\"https://www.google.com/\">here</A>.\r\r\n</BODY></HTML>\r\r\n\r\nwasm-console > "
-  - delay: 785
+  - delay: 1501
     content: h
-  - delay: 104
+  - delay: 193
     content: i
   - delay: 127
     content: s
-  - delay: 112
+  - delay: 184
     content: t
-  - delay: 119
+  - delay: 139
     content: o
-  - delay: 104
+  - delay: 103
     content: r
-  - delay: 112
+  - delay: 138
     content: 'y'
-  - delay: 206
-    content: "\r\n1* ls\r\n2* cd testme\r\n3* ls\r\n4* cd some-dir\r\n5* ls\r\n6* cat some-other-file\r\n7* cd ..\r\n8* history\r\n9* cd ..\r\n10* ls\r\n11* cd pkg\r\n12* ls\r\n13* cd ..\r\n14* curl https://google.com\r\n15* history\r\nwasm-console > "
-  - delay: 1442
-    content: e
-  - delay: 200
-    content: x
-  - delay: 137
-    content: i
-  - delay: 108
-    content: t
-  - delay: 151
-    content: "\r\nRajats-MacBook-Pro:wasm-console rajatjindal$ "
-  - delay: 1150
+  - delay: 354
+    content: "\r\n1* ls\r\n2* cd testme\r\n3* pwd\r\n4* ls\r\n5* cd some-dir\r\n6* pwd\r\n7* ls\r\n8* cat some-other-file\r\n9* cd ../..\r\n10* curl https://google.com\r\n11* history\r\nwasm-console > "
+  - delay: 3747
+    content: "^D\b\b\r\ngoodbye !\r\n"
+  - delay: 5
+    content: 'Rajats-MacBook-Pro:wasm-console rajatjindal$ '
+  - delay: 2470
     content: "logout\r\n"

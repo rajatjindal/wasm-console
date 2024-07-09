@@ -1,7 +1,7 @@
 Experimental wasm-console, because why not?
 
 ## Demo
-![using wasm-console](https://www.terminalizer.com/view/88897a395986)
+![using wasm-console](demo/usage.gif)
 
 ## Building
 ```
