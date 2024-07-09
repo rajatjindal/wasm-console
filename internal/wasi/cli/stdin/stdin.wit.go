@@ -6,7 +6,7 @@
 package stdin
 
 import (
-	"github.com/rajatjindal/wasmshell/internal/wasi/io/streams"
+	"github.com/rajatjindal/wasm-console/internal/wasi/io/streams"
 	"github.com/ydnar/wasm-tools-go/cm"
 )
 

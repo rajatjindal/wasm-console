@@ -5,7 +5,7 @@
 package types
 
 import (
-	wallclock "github.com/rajatjindal/wasmshell/internal/wasi/clocks/wall-clock"
+	wallclock "github.com/rajatjindal/wasm-console/internal/wasi/clocks/wall-clock"
 	"github.com/ydnar/wasm-tools-go/cm"
 	"unsafe"
 )

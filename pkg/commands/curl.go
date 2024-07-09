@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"strings"
 
-	httpclient "github.com/rajatjindal/wasmshell/pkg/http-client"
+	httpclient "github.com/rajatjindal/wasm-console/pkg/http-client"
 )
 
 func Curl(args []string) error {

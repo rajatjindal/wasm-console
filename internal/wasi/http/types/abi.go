@@ -5,7 +5,7 @@
 package types
 
 import (
-	monotonicclock "github.com/rajatjindal/wasmshell/internal/wasi/clocks/monotonic-clock"
+	monotonicclock "github.com/rajatjindal/wasm-console/internal/wasi/clocks/monotonic-clock"
 	"github.com/ydnar/wasm-tools-go/cm"
 	"unsafe"
 )

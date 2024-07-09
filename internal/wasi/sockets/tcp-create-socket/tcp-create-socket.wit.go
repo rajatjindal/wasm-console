@@ -6,8 +6,8 @@
 package tcpcreatesocket
 
 import (
-	"github.com/rajatjindal/wasmshell/internal/wasi/sockets/network"
-	"github.com/rajatjindal/wasmshell/internal/wasi/sockets/tcp"
+	"github.com/rajatjindal/wasm-console/internal/wasi/sockets/network"
+	"github.com/rajatjindal/wasm-console/internal/wasi/sockets/tcp"
 	"github.com/ydnar/wasm-tools-go/cm"
 )
 

@@ -1,4 +1,4 @@
-module github.com/rajatjindal/wasmshell
+module github.com/rajatjindal/wasm-console
 
 go 1.22.4
 

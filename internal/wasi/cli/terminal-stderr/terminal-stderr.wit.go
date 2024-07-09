@@ -9,7 +9,7 @@
 package terminalstderr
 
 import (
-	terminaloutput "github.com/rajatjindal/wasmshell/internal/wasi/cli/terminal-output"
+	terminaloutput "github.com/rajatjindal/wasm-console/internal/wasi/cli/terminal-output"
 	"github.com/ydnar/wasm-tools-go/cm"
 )
 

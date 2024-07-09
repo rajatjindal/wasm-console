@@ -5,7 +5,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/rajatjindal/wasmshell/internal/wasi/http/types"
+	"github.com/rajatjindal/wasm-console/internal/wasi/http/types"
 	"github.com/ydnar/wasm-tools-go/cm"
 )
 

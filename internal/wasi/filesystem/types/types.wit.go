@@ -31,9 +31,9 @@
 package types
 
 import (
-	wallclock "github.com/rajatjindal/wasmshell/internal/wasi/clocks/wall-clock"
-	ioerror "github.com/rajatjindal/wasmshell/internal/wasi/io/error"
-	"github.com/rajatjindal/wasmshell/internal/wasi/io/streams"
+	wallclock "github.com/rajatjindal/wasm-console/internal/wasi/clocks/wall-clock"
+	ioerror "github.com/rajatjindal/wasm-console/internal/wasi/io/error"
+	"github.com/rajatjindal/wasm-console/internal/wasi/io/streams"
 	"github.com/ydnar/wasm-tools-go/cm"
 )
 

@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/rajatjindal/wasmshell/internal/wasi/cli/stdout"
-	"github.com/rajatjindal/wasmshell/internal/wasi/http/types"
-	"github.com/rajatjindal/wasmshell/internal/wasi/io/streams"
+	"github.com/rajatjindal/wasm-console/internal/wasi/cli/stdout"
+	"github.com/rajatjindal/wasm-console/internal/wasi/http/types"
+	"github.com/rajatjindal/wasm-console/internal/wasi/io/streams"
 	"github.com/ydnar/wasm-tools-go/cm"
 )
 

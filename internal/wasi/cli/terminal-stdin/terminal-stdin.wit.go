@@ -9,7 +9,7 @@
 package terminalstdin
 
 import (
-	terminalinput "github.com/rajatjindal/wasmshell/internal/wasi/cli/terminal-input"
+	terminalinput "github.com/rajatjindal/wasm-console/internal/wasi/cli/terminal-input"
 	"github.com/ydnar/wasm-tools-go/cm"
 )
 

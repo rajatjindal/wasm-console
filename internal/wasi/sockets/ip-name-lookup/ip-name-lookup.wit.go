@@ -6,8 +6,8 @@
 package ipnamelookup
 
 import (
-	"github.com/rajatjindal/wasmshell/internal/wasi/io/poll"
-	"github.com/rajatjindal/wasmshell/internal/wasi/sockets/network"
+	"github.com/rajatjindal/wasm-console/internal/wasi/io/poll"
+	"github.com/rajatjindal/wasm-console/internal/wasi/sockets/network"
 	"github.com/ydnar/wasm-tools-go/cm"
 )
 

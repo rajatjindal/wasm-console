@@ -4,22 +4,22 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/rajatjindal/wasmshell/internal/wasi/cli/stdin"
-	"github.com/rajatjindal/wasmshell/pkg/commands"
+	"github.com/rajatjindal/wasm-console/internal/wasi/cli/stdin"
+	"github.com/rajatjindal/wasm-console/pkg/commands"
 )
 
 func main() {
 	history := []string{}
-	fmt.Println("starting wasmshell. Enter 'exit' to quit the shell.")
+	fmt.Println("starting wasm-console. Enter 'exit' to quit the shell.")
 	for {
-		fmt.Print("wasmshell> ")
+		fmt.Print("wasm-console> ")
 		result := stdin.GetStdin().BlockingRead(1024)
 		if result.IsErr() {
 			if result.Err().Closed() {
 				fmt.Println("\ngoodbye !")
 				return
 			}
-			panic("wasmshell error")
+			panic("wasm-console error")
 		}
 
 		input := strings.TrimSpace(string(result.OK().Slice()))

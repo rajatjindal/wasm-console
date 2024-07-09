@@ -5,8 +5,8 @@ import (
 	"io"
 	"net/http"
 
-	outgoinghandler "github.com/rajatjindal/wasmshell/internal/wasi/http/outgoing-handler"
-	"github.com/rajatjindal/wasmshell/internal/wasi/http/types"
+	outgoinghandler "github.com/rajatjindal/wasm-console/internal/wasi/http/outgoing-handler"
+	"github.com/rajatjindal/wasm-console/internal/wasi/http/types"
 	"github.com/ydnar/wasm-tools-go/cm"
 )
 
