@@ -44,7 +44,7 @@ func main() {
 				fmt.Println(err)
 			}
 		case "rm":
-			err := commands.Rm(input)
+			err := commands.Rm(ctx, input)
 			if err != nil {
 				fmt.Println(err)
 			}
