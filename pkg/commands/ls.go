@@ -11,7 +11,7 @@ import (
 
 func Ls(ctx context.Context, input string) error {
 	args := strings.Fields(strings.TrimSpace(input))
-	if len(args) == 1 && GetPwd(ctx) == "" || len(args) > 1 && strings.TrimPrefix(args[1], "/") == "" {
+	if (len(args) == 1 && GetPwd(ctx) == "") || (len(args) > 1 && strings.TrimPrefix(args[1], "/") == "") {
 		lsRoot()
 		return nil
 	}
