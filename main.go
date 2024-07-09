@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"strings"
 
@@ -9,10 +10,11 @@ import (
 )
 
 func main() {
+	ctx := commands.NewContext(context.Background())
 	history := []string{}
 	fmt.Println("starting wasm-console. Enter 'exit' to quit the shell.")
 	for {
-		fmt.Print("wasm-console> ")
+		fmt.Printf("wasm-console %s> ", commands.GetPwd(ctx))
 		result := stdin.GetStdin().BlockingRead(1024)
 		if result.IsErr() {
 			if result.Err().Closed() {
@@ -32,18 +34,22 @@ func main() {
 		history = append(history, string(result.OK().Slice()))
 		cmd := strings.TrimSpace((cmdAndArgs[0]))
 		switch cmd {
+		case "cd":
+			commands.Cd(ctx, input)
+		case "pwd":
+			commands.Pwd(ctx)
 		case "ls":
-			err := commands.Ls(cmdAndArgs[1:])
+			err := commands.Ls(ctx, input)
 			if err != nil {
 				fmt.Println(err)
 			}
 		case "rm":
-			err := commands.Rm(cmdAndArgs[1:])
+			err := commands.Rm(input)
 			if err != nil {
 				fmt.Println(err)
 			}
 		case "cat":
-			err := commands.Cat(cmdAndArgs[1:])
+			err := commands.Cat(ctx, input)
 			if err != nil {
 				fmt.Println(err)
 			}
@@ -52,7 +58,7 @@ func main() {
 				fmt.Print(i+1, "* ", h)
 			}
 		case "curl":
-			err := commands.Curl(cmdAndArgs[1:])
+			err := commands.Curl(input)
 			if err != nil {
 				fmt.Println(err)
 			}

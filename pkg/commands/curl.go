@@ -12,17 +12,17 @@ import (
 	httpclient "github.com/rajatjindal/wasm-console/pkg/http-client"
 )
 
-func Curl(args []string) error {
-	return run(strings.Join(args, " "))
+func Curl(input string) error {
+	return run(input)
 }
 
-func run(inp string) error {
-	trimmedInp := strings.TrimSpace(inp)
-	if trimmedInp == "" {
+func run(input string) error {
+	args := strings.Fields(strings.TrimSpace(input))
+	if len(args) == 1 {
 		return fmt.Errorf("no valid curl command found")
 	}
 
-	req, err := parseCurlCommand(trimmedInp)
+	req, err := parseCurlCommand(input)
 	if err != nil {
 		return err
 	}
@@ -39,7 +39,6 @@ func run(inp string) error {
 	}
 
 	fmt.Println(string(raw))
-
 	return nil
 }
 
