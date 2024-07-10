@@ -38,6 +38,8 @@ func main() {
 			commands.Cd(ctx, input)
 		case "pwd":
 			commands.Pwd(ctx)
+		case "printenv":
+			commands.PrintEnv(ctx)
 		case "ls":
 			err := commands.Ls(ctx, input)
 			if err != nil {
