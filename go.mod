@@ -4,7 +4,7 @@ go 1.22.4
 
 require (
 	github.com/stretchr/testify v1.9.0
-	github.com/ydnar/wasm-tools-go v0.1.2
+	github.com/ydnar/wasm-tools-go v0.1.3
 )
 
 require (
