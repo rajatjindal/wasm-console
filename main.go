@@ -35,7 +35,10 @@ func main() {
 		cmd := strings.TrimSpace((cmdAndArgs[0]))
 		switch cmd {
 		case "cd":
-			commands.Cd(ctx, input)
+			err := commands.Cd(ctx, input)
+			if err != nil {
+				fmt.Println(err)
+			}
 		case "pwd":
 			commands.Pwd(ctx)
 		case "printenv":

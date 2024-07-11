@@ -3,6 +3,7 @@ package commands
 import (
 	"context"
 	"fmt"
+	"os"
 	"path"
 	"strings"
 )
@@ -19,12 +20,17 @@ func Cd(ctx context.Context, input string) error {
 		return err
 	}
 
-	MustFromContext(ctx).cwd = strings.TrimPrefix(dir, "/")
+	woutPrefix := strings.TrimPrefix(dir, "/")
+	_, err = os.Stat(woutPrefix)
+	if err != nil {
+		return fmt.Errorf("cd: no such file or dir: %s", args[1])
+	}
+
+	MustFromContext(ctx).cwd = woutPrefix
 	return nil
 }
 
 func calculateDir(ctx context.Context, dir string) (string, error) {
-	//todo: check if dir exist or not
 	if isAbsolute(dir) {
 		return dir, nil
 	}

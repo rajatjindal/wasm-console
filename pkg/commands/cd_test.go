@@ -47,6 +47,12 @@ func TestCalculateDir(t *testing.T) {
 		},
 		{
 			cwd:       "testme/nested-1",
+			dir:       "../nested-2",
+			expected:  "testme/nested-2",
+			errstring: "",
+		},
+		{
+			cwd:       "testme/nested-1",
 			dir:       "/some-root-dir",
 			expected:  "/some-root-dir",
 			errstring: "",
