@@ -3,7 +3,6 @@ package commands
 import (
 	"context"
 	"fmt"
-	"os"
 	"path"
 	"strings"
 )
@@ -20,13 +19,7 @@ func Cd(ctx context.Context, input string) error {
 		return err
 	}
 
-	woutPrefix := strings.TrimPrefix(dir, "/")
-	_, err = os.Stat(woutPrefix)
-	if err != nil {
-		return fmt.Errorf("cd: no such file or dir: %s", args[1])
-	}
-
-	MustFromContext(ctx).cwd = woutPrefix
+	MustFromContext(ctx).cwd = dir
 	return nil
 }
 

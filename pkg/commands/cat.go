@@ -4,7 +4,6 @@ import (
 	"context"
 	"fmt"
 	"os"
-	"path"
 	"strings"
 )
 
@@ -22,16 +21,4 @@ func Cat(ctx context.Context, input string) error {
 
 	fmt.Println(string(raw))
 	return nil
-}
-
-func isAbsolute(inp string) bool {
-	return strings.HasPrefix(inp, "/")
-}
-
-func getAbsolute(ctx context.Context, inp string) string {
-	if isAbsolute(inp) {
-		return inp
-	}
-
-	return path.Join(GetPwd(ctx), inp)
 }

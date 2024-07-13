@@ -11,8 +11,8 @@ import (
 
 func Ls(ctx context.Context, input string) error {
 	args := strings.Fields(strings.TrimSpace(input))
-	if (len(args) == 1 && GetPwd(ctx) == "") || (len(args) > 1 && strings.TrimPrefix(args[1], "/") == "") {
-		lsRoot()
+	if (len(args) == 1 && GetPwd(ctx) == rootDir(ctx)) || (len(args) > 1 && args[1] == rootDir(ctx)) {
+		lsRoot(ctx)
 		return nil
 	}
 
@@ -33,7 +33,20 @@ func Ls(ctx context.Context, input string) error {
 	return nil
 }
 
-func lsRoot() {
+func lsRoot(ctx context.Context) {
+	if MustFromContext(ctx).runtime == RuntimeSpin {
+		entries, err := os.ReadDir(rootDir(ctx))
+		if err != nil {
+			panic(err)
+		}
+
+		for _, e := range entries {
+			fmt.Println(e.Name())
+		}
+
+		return
+	}
+
 	for _, d := range preopens.GetDirectories().Slice() {
 		fmt.Println(d.F1)
 	}

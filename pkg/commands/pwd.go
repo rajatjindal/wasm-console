@@ -6,6 +6,7 @@ import (
 )
 
 func Pwd(ctx context.Context) {
+	//always prefix "/" when printing pwd
 	fmt.Println("/" + GetPwd(ctx))
 }
 

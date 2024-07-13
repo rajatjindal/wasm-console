@@ -1,0 +1,15 @@
+spin_manifest_version = 2
+
+[application]
+authors = ["SpinKube Engineering Team"]
+description = "A simple spin hello world"
+name = "spin-hello"
+version = "1.0.0"
+
+
+[[trigger.command]]
+component = "hello"
+
+[component.hello]
+files = [ { source = "pkg", destination = "/pkg" }, { source = "internal", destination = "/internal" } ]
+source = "main.wasm"
