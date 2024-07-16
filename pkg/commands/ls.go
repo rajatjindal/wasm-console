@@ -37,7 +37,8 @@ func lsRoot(ctx context.Context) {
 	if MustFromContext(ctx).runtime == RuntimeSpin {
 		entries, err := os.ReadDir(rootDir(ctx))
 		if err != nil {
-			panic(err)
+			fmt.Printf("failed to read root dir. error: %v\n", err)
+			return
 		}
 
 		for _, e := range entries {

@@ -2,8 +2,6 @@ package commands
 
 import (
 	"context"
-
-	"github.com/rajatjindal/wasm-console/internal/wasi/filesystem/preopens"
 )
 
 type key int
@@ -49,9 +47,10 @@ func FromContext(ctx context.Context) (*Ctx, bool) {
 }
 
 func guessRuntime() Runtime {
-	if preopens.GetDirectories().Len() == 1 && preopens.GetDirectories().Slice()[0].F1 == "/" {
-		return RuntimeSpin
-	}
+	// if preopens.GetDirectories().Len() == 1 && preopens.GetDirectories().Slice()[0].F1 == "/" {
+	// 	return RuntimeSpin
+	// }
 
-	return RuntimeWasmtime
+	// return RuntimeWasmtime
+	return RuntimeSpin
 }

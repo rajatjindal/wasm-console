@@ -18,11 +18,7 @@ func rootDir(ctx context.Context) string {
 }
 
 func needsRootPrefix(ctx context.Context) bool {
-	if MustFromContext(ctx).runtime == RuntimeSpin {
-		return true
-	}
-
-	return false
+	return MustFromContext(ctx).runtime == RuntimeSpin
 }
 
 func isAbsolute(inp string) bool {
